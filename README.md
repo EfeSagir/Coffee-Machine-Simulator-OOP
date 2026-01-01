@@ -1,33 +1,24 @@
-Coffee Machine (OOP) ☕️
+# Coffee Machine Simulator (OOP) ☕️
 
-This project is a sophisticated coffee machine simulation that demonstrates the power of Object-Oriented Programming (OOP) in Python. Instead of a single script, the system is divided into multiple specialized classes that interact to manage resources, process payments, and serve drinks.
+A sophisticated system simulation that models the internal logic of a professional coffee vending machine. Built with a strictly modular **Object-Oriented** approach, it simulates resource auditing, multi-denomination currency processing, and ingredient management.
 
-🚀 Key Features
+## 🚀 Simulation Features
 
-Modular Architecture: The system is split into four distinct modules: Menu, CoffeeMaker, MoneyMachine, and the main controller.
+- **Resource Inventory Auditing**: Automatically checks ingredient levels (water, milk, coffee) against drink requirements before processing orders.
+- **Financial Transaction Logic**: A coin-operated payment system that validates amounts, calculates change, and tracks total profit.
+- **Modular Menu System**: Standalone menu management that allows for easy expansion of drink types and pricing.
+- **System Reporting**: Real-time administrative feedback on machine status and financial records.
 
-Resource Management: Tracks inventory of water, milk, and coffee, preventing orders if ingredients are insufficient.
+## 🛠️ System Components
 
-Payment Processing: Handles multiple coin denominations (quarters, dimes, nickels, pennies) and calculates change accurately.
+- `main.py`: The central controller that manages interaction between the machine's hardware logic and the user.
+- `coffee_maker.py`: Simulates the "hardware" responsible for resource tracking and production.
+- `money_machine.py`: Handles all banking, coin processing, and profit management.
+- `menu.py`: Defines the drink database and provides search/retrieval functionality.
 
-Dynamic Menu: A standalone menu class that manages different drink types and their associated costs/ingredients.
+## 🎮 Usage Flow
 
-🛠️ Project Structure
-
-main.py: The central logic that orchestrates the interaction between the classes and handles user input.
-
-coffee_maker.py: Manages the physical resources and the coffee-making process.
-
-money_machine.py: Handles all financial transactions, profit tracking, and coin validation.
-
-menu.py: Defines the available drinks and provides search functionality.
-
-🎮 How to Use
-
-Check Status: Type report to see current resource levels and total profit.
-
-Order: Type the name of the drink (e.g., latte).
-
-Payment: Insert coins as prompted; the machine will calculate change or refund if the amount is insufficient.
-
-Maintenance: Type off to shut down the machine.
+1.  **Status**: Type `report` to audit resources and profits.
+2.  **Order**: Enter a drink name (e.g., `latte`).
+3.  **Payment**: Insert coins as prompted; the system handles change and refunds.
+4.  **Shutdown**: Type `off` to terminate the simulation.
